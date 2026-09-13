@@ -1,41 +1,81 @@
 # 💰 Crypto Wallet
 
-A full-stack digital wallet application built with Next.js, Spring Boot, and PostgreSQL.
+A full-stack digital wallet application built with **Next.js, Spring Boot, and PostgreSQL**.
 
-## 🚀 Features
+The application allows users to create an account, authenticate securely using JWT, manage wallet funds, send and receive money, and view their transaction history through a responsive web interface.
 
-- User Signup & Login
-- JWT Authentication
-- Wallet Balance
-- Deposit
-- Withdraw
-- Send Funds
-- Receive Funds
-- Transaction History
-- User Profile
-- Responsive UI
+> ⚠️ **Note:** This is an educational wallet simulation. It does not perform real cryptocurrency transactions on a blockchain.
 
-## 🛠️ Tech Stack
+---
 
-### Frontend
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
+## ✨ Features
 
-### Backend
-- Java
-- Spring Boot
-- Spring Security
-- JWT
-- Spring Data JPA
-- Hibernate
+### 🔐 Authentication
+- User registration
+- User login
+- JWT-based authentication
+- Protected wallet APIs
+- Secure authenticated sessions
 
-### Database
-- PostgreSQL
+### 💳 Wallet Management
+- View wallet balance
+- Deposit funds
+- Withdraw funds
+- Send funds to another registered user
+- Receive funds from another user
 
-## ⚠️ Disclaimer
+### 📊 Transactions
+- View complete transaction history
+- Deposit history
+- Withdrawal history
+- Send and receive history
+- Transaction timestamps
+- Transaction amount tracking
 
-This project is a demo digital wallet application created for learning and portfolio purposes.
+### 👤 Profile
+- View user information
+- View account ID
+- Access wallet
+- Access transaction history
+- Logout
 
-It does not perform real cryptocurrency transactions on a blockchain.
+### 📱 Responsive UI
+- Desktop responsive design
+- Mobile responsive design
+- Modern dark-themed interface
+- Interactive buttons and forms
+- Loading and error feedback
+
+---
+
+# 🏗️ System Architecture
+
+```text
+┌──────────────────────────────┐
+│        Next.js Frontend      │
+│                              │
+│  Login • Wallet • Send       │
+│  Receive • Transactions      │
+│  Profile                     │
+└──────────────┬───────────────┘
+               │
+               │ REST API
+               ▼
+┌──────────────────────────────┐
+│       Spring Boot API        │
+│                              │
+│ Controllers                  │
+│      ↓                       │
+│ Services                     │
+│      ↓                       │
+│ Repositories                 │
+└──────────────┬───────────────┘
+               │
+               │ JPA / Hibernate
+               ▼
+┌──────────────────────────────┐
+│         PostgreSQL           │
+│                              │
+│ Users • Wallets              │
+│ Transactions                 │
+└──────────────────────────────┘
