@@ -1,0 +1,45 @@
+# ==============================
+# Next.js / Node
+# ==============================
+
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==============================
+# Java / Spring Boot / Maven
+# ==============================
+
+target/
+*.class
+
+# ==============================
+# IDE / Editor
+# ==============================
+
+.vscode/
+.idea/
+*.iml
+
+# ==============================
+# OS generated files
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
