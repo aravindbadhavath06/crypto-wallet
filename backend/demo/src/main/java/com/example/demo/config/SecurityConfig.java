@@ -40,7 +40,10 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:3000")
+                List.of(
+        "http://localhost:3000",
+        "https://crypto-wallet-zeta-five.vercel.app"
+)
         );
 
         configuration.setAllowedMethods(
