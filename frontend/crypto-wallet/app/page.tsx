@@ -41,8 +41,8 @@ export default function Home() {
 
     try {
       const endpoint = isLogin
-        ? "http://localhost:8080/api/auth/login"
-        : "http://localhost:8080/api/auth/signup";
+        ? "https://crypto-wallet-backend-q9wj.onrender.com/api/auth/login"
+        : "https://crypto-wallet-backend-q9wj.onrender.com/api/auth/signup";
 
       const body = isLogin
         ? {

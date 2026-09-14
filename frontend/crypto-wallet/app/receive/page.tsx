@@ -47,7 +47,7 @@ export default function Transactions() {
       setError("");
 
       const response = await fetch(
-        "http://localhost:8080/api/wallet/transactions",
+        "https://crypto-wallet-backend-q9wj.onrender.com/api/wallet/transactions",
         {
           headers: {
             Authorization: `Bearer ${token}`,

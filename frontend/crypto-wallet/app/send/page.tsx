@@ -31,7 +31,7 @@ export default function Send() {
   async function fetchWallet(token: string) {
     try {
       const response = await fetch(
-        "http://localhost:8080/api/wallet/me",
+        "https://crypto-wallet-backend-q9wj.onrender.com/api/wallet/me",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -114,7 +114,7 @@ export default function Send() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/wallet/send",
+        "https://crypto-wallet-backend-q9wj.onrender.com/api/wallet/send",
         {
           method: "POST",
           headers: {

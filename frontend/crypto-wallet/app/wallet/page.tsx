@@ -40,7 +40,7 @@ export default function Wallet() {
   async function fetchWallet(token: string) {
     try {
       const response = await fetch(
-        "http://localhost:8080/api/wallet/me",
+        "https://crypto-wallet-backend-q9wj.onrender.com/api/wallet/me",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -93,7 +93,7 @@ export default function Wallet() {
           : "/api/wallet/withdraw";
 
       const response = await fetch(
-        `http://localhost:8080${endpoint}`,
+        `https://crypto-wallet-backend-q9wj.onrender.com${endpoint}`,
         {
           method: "POST",
           headers: {
